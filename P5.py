@@ -1,10 +1,7 @@
 #Find the smallest number that is evenly divided by each of 1 to 20 inclusive
 
 import math
-
 from TimingProfiler import TimingProfiler
-import sys
-
 
 def get_primes(biggest_divisor):
     primes = {2}
