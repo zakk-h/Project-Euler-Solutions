@@ -1,4 +1,4 @@
-import numpy as np
+#Find the highest product of 4 consecutive integers in the same row, column, or diagonal.
 grid = [
     [8, 2, 22, 97, 38, 15, 0, 40, 0, 75, 4, 5, 7, 78, 52, 12, 50, 77, 91, 8],
     [49, 49, 99, 40, 17, 81, 18, 57, 60, 87, 17, 40, 98, 43, 69, 48, 4, 56, 62, 0],
@@ -106,7 +106,7 @@ for i in range(consecutive-1, len(grid)):
     for k in range(i+1):
         temp.append(grid[i-k][0+k])
     diagonals.append(temp)
-print(diagonals)
+
 for diagonal in diagonals:
     product = 1
     last_zero = 0
